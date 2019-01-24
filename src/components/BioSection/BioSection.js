@@ -2,17 +2,20 @@ import React from 'react'
 import { Section, Header, Content, Visual, VisualWrapper } from './Styled';
 
 function BioSection(props) {
+    const { visualSource, title, content } = props
     return (
         <Section>
-            <VisualWrapper>
-                {/* <Visual
-                    fixed={props.visualSource}
-                    alt={`${props.title} image`}
-                /> */}
-            </VisualWrapper>
-            <Header>{props.title}</Header>
-            <Content>{props.content}</Content>
-        </Section>
+            {visualSource && (
+                <VisualWrapper>
+                    <Visual
+                        src={visualSource}
+                        alt={`${title} image`}
+                    />
+                </VisualWrapper>
+            )}
+            <Header>{title}</Header>
+            <Content>{content}</Content>
+        </Section >
     )
 }
 

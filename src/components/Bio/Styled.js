@@ -14,7 +14,8 @@ export const ProfileImage = styled(Image)`
 
 export const IntroSection = styled.section`
     text-align: center;
-    min-height: 75vh;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
     display: flex;
     justify-content: center;
     flex-direction: column;

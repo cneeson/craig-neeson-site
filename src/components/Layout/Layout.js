@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Link from '../Link'
 import { PageWrapper, Nav, Title, TitleLink, LinkContainer } from './Styled'
 import "./layout.css"
@@ -15,8 +16,8 @@ class Layout extends React.Component {
 
     const links = (
       <LinkContainer>
-        <Link to="/">About</Link>
-        <Link to="/">Contact</Link>
+        <Link to="/#about">About</Link>
+        <Link to="/#contact">Contact</Link>
         <Link to="/blogs">Blog</Link>
         <Link to="/">CV</Link>
       </LinkContainer>

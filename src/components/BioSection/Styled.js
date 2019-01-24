@@ -6,24 +6,24 @@ export const Section = styled.section`
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    min-height: 75vh;
+    margin-bottom: 7rem;
 `;
 
 export const Header = styled.h2`
     text-align: center;
+    margin-top: 0;
 `;
 
 export const Content = styled.div`
 `;
 
-export const Visual = styled(Image)`
+export const Visual = styled.img`
     margin-right: ${rhythm(1 / 2)};
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     min-width: 100px;
     min-height: 100px;
-    border-radius: 100%;
-    borderRadius: 50%;
-    margin: 1rem;
+    max-width: 300px;
+    max-width: 300px;
 `;
 
 export const VisualWrapper = styled.div`

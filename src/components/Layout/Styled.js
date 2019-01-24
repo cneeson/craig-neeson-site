@@ -39,6 +39,11 @@ export const TitleLink = styled(Link)`
     box-shadow: none;
     text-decoration: none;
     color: inherit;
+    transition: all .2s;
+
+    &:hover{
+        color: #12167d;
+    }
 `;
 
 export const LinkContainer = styled.div`
