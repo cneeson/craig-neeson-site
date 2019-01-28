@@ -1,5 +1,4 @@
 import React from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Link from '../Link'
 import { PageWrapper, Nav, Title, TitleLink, LinkContainer } from './Styled'
 import "./layout.css"
@@ -16,10 +15,10 @@ class Layout extends React.Component {
 
     const links = (
       <LinkContainer>
-        <Link to="/#about">About</Link>
-        <Link to="/#contact">Contact</Link>
-        <Link to="/blogs">Blog</Link>
-        <Link to="/">CV</Link>
+        <Link to="/#about" fancyHover>About</Link>
+        <Link to="/#contact" fancyHover>Contact</Link>
+        <Link to="/blogs" fancyHover>Blog</Link>
+        <Link to="/" fancyHover>CV</Link>
       </LinkContainer>
     )
 

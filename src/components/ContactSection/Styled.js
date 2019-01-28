@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-import { rhythm } from '../../utils/typography'
-import Image from 'gatsby-image'
 
 export const Section = styled.section`
     width: 80%;
@@ -20,7 +18,7 @@ export const IconsWrapper = styled.div`
     justify-content: space-between;
 
     a {
-        text-decoration: none !important;
+        box-shadow: none;
         transition: all 0.3s;
         padding-bottom: .6rem;
 
@@ -33,7 +31,6 @@ export const IconsWrapper = styled.div`
         flex-direction: column;
 
         a {
-            text-decoration: none !important;
             margin-right: auto;
             margin-left: auto;
             margin-top: 1rem;

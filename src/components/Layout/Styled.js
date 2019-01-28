@@ -33,17 +33,24 @@ export const Nav = styled.nav`
 export const Title = styled.h1`
     line-height: 1.5;
     margin: 0;
+    transition: all .2s;
+
+    &:hover {
+        color: #12167d;
+        transform: scale(1.1, 1.1);
+    }
+
+    &:active {
+        transform: scale(1, 1);
+    }
 `;
 
 export const TitleLink = styled(Link)`
     box-shadow: none;
     text-decoration: none;
     color: inherit;
-    transition: all .2s;
 
-    &:hover{
-        color: #12167d;
-    }
+    
 `;
 
 export const LinkContainer = styled.div`
