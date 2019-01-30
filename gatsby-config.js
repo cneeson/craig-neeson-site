@@ -3,7 +3,7 @@ module.exports = {
     title: `Craig Neeson`,
     author: `Craig Neeson`,
     description: `The personal blog of Craig Neeson - Software Developer.`,
-
+    siteUrl: `http://www.craigneeson.co.uk`,
   },
   plugins: [
     'gatsby-plugin-svgr',
