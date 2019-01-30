@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Link from '../Link'
+import { InternalLink, ExternalLink } from '../Link/Styled'
 import { rhythm } from '../../utils/typography'
 
 export const PageWrapper = styled.div`
@@ -45,7 +45,7 @@ export const Title = styled.h1`
     }
 `;
 
-export const TitleLink = styled(Link)`
+export const TitleLink = styled(InternalLink)`
     box-shadow: none;
     text-decoration: none;
     color: inherit;
@@ -61,7 +61,7 @@ export const LinkContainer = styled.div`
         display: block;
     }
 
-    ${Link}{
+    ${InternalLink}, ${ExternalLink} {
         margin: 1rem;
     }
 `;

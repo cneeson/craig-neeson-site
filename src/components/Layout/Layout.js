@@ -3,6 +3,8 @@ import Link from '../Link'
 import { PageWrapper, Nav, Title, TitleLink, LinkContainer } from './Styled'
 import "./layout.css"
 
+console.log(Link);
+
 class Layout extends React.Component {
   render() {
     const { title, children } = this.props
@@ -18,7 +20,7 @@ class Layout extends React.Component {
         <Link to="/#about" fancyHover>About</Link>
         <Link to="/#contact" fancyHover>Contact</Link>
         <Link to="/blogs" fancyHover>Blog</Link>
-        <Link to="/" fancyHover>CV</Link>
+        <Link href="/Craig-Neeson-CV.pdf" fancyHover>CV</Link>
       </LinkContainer>
     )
 
