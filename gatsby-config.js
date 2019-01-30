@@ -4,9 +4,6 @@ module.exports = {
     author: `Craig Neeson`,
     description: `A personal blog to share my opinions on life, tech and the universe.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
-    social: {
-      twitter: `kylemathews`,
-    },
   },
   plugins: [
     'gatsby-plugin-svgr',

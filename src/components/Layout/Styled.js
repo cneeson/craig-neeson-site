@@ -12,8 +12,7 @@ export const PageWrapper = styled.div`
 export const Nav = styled.nav`
     background: white;
     padding: 1rem;
-    
-    border-bottom: 5px solid #ff007d;
+    box-shadow: 0 10px 23px rgba(0,0,0,0.25), 0 3px 7px rgba(0,0,0,0.22);
 
     div{
         margin-left: auto;
@@ -36,7 +35,10 @@ export const Title = styled.h1`
     transition: all .2s;
 
     &:hover {
-        color: #12167d;
+        // color: #12167d;
+        background: linear-gradient(to right, #c1006f 0%, #0072f3 50%, #604acc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         transform: scale(1.1, 1.1);
     }
 
@@ -64,4 +66,8 @@ export const LinkContainer = styled.div`
     ${InternalLink}, ${ExternalLink} {
         margin: 1rem;
     }
+`;
+
+export const Footer = styled.div`
+    margin-top: 5rem;
 `;

@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from '../Link'
-import { PageWrapper, Nav, Title, TitleLink, LinkContainer } from './Styled'
+import { PageWrapper, Nav, Title, TitleLink, LinkContainer, Footer } from './Styled'
 import "./layout.css"
 
 class Layout extends React.Component {
@@ -23,9 +23,9 @@ class Layout extends React.Component {
     )
 
     const footer = (
-      <footer>
+      <Footer>
         © {new Date().getFullYear()} Craig Neeson
-      </footer>
+      </Footer>
     )
 
     return (
