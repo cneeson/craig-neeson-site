@@ -3,8 +3,6 @@ import Link from '../Link'
 import { PageWrapper, Nav, Title, TitleLink, LinkContainer } from './Styled'
 import "./layout.css"
 
-console.log(Link);
-
 class Layout extends React.Component {
   render() {
     const { title, children } = this.props

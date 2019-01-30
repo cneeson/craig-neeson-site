@@ -4,6 +4,7 @@ import projectsSvgUrl from '../../../content/assets/projects-image.svg';
 import codeSvgUrl from '../../../content/assets/code-image.svg';
 import BioSection from '../BioSection';
 import ContactSection from '../ContactSection';
+import InvisibleAnchor from '../InvisibleAnchor';
 import { ProfileImage, IntroSection, Tagline } from './Styled';
 
 function Bio() {
@@ -12,7 +13,8 @@ function Bio() {
             query={bioQuery}
             render={data => (
                 <Fragment>
-                    <IntroSection id="about">
+                    <InvisibleAnchor id="about">About</InvisibleAnchor>
+                    <IntroSection>
                         <div>
                             <ProfileImage
                                 fixed={data.avatar.childImageSharp.fixed}
