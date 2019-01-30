@@ -15,6 +15,7 @@ export const Header = styled.h2`
 `;
 
 export const Content = styled.div`
+    text-align: justify;
 `;
 
 export const Visual = styled.img`

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub, faSpotify } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
 import { Section, Header, IconsWrapper } from './Styled';
 
@@ -17,6 +17,9 @@ function ContactSection(props) {
                 </a>
                 <a href="https://github.com/cneeson" target="_blank" className="github'">
                     <FontAwesomeIcon icon={faGithub} color="#24292e" size="6x" />
+                </a>
+                <a href="https://open.spotify.com/user/cneeson12?si=P47MYR4jS8usftxVUtsPwQ" target="_blank">
+                    <FontAwesomeIcon icon={faSpotify} color="#1DB954" size="6x" />
                 </a>
             </IconsWrapper>
         </Section >
