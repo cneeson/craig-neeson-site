@@ -48,7 +48,7 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
-  })
+  }).catch((err) => console.error('ERR occurred while building site', err))
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
