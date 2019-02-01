@@ -30,12 +30,11 @@ export const Nav = styled.nav`
 `;
 
 export const Title = styled.h1`
-    line-height: 1.5;
+    line-height: 2;
     margin: 0;
     transition: all .2s;
 
     &:hover {
-        // color: #12167d;
         background: linear-gradient(to right, #c1006f 0%, #0072f3 50%, #604acc 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

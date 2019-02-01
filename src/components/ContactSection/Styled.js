@@ -10,6 +10,7 @@ export const Section = styled.section`
 export const Header = styled.h2`
     text-align: center;
     margin-top: 10rem;
+    // font-weight: 400;
 `;
 
 export const IconsWrapper = styled.div`

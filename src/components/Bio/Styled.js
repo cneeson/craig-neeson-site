@@ -25,6 +25,7 @@ export const IntroSection = styled.section`
 
     @media (max-width: 650px) {
         max-width: 90vw;
+        margin-top: 8rem;
     }
 `
 export const Tagline = styled.p`
