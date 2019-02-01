@@ -12,7 +12,6 @@ export const Section = styled.section`
 export const Header = styled.h2`
     text-align: center;
     margin-top: 0;
-    // font-weight: 400;
 `;
 
 export const Content = styled.div`
