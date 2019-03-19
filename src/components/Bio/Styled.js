@@ -5,8 +5,8 @@ import { rhythm } from '../../utils/typography'
 export const ProfileImage = styled(Image)`
     margin-right: ${rhythm(1 / 2)};
     margin-bottom: 0;
-    min-width: 100px;
-    min-height: 100px;
+    min-width: 110px;
+    min-height: 110px;
     border-radius: 100%;
     borderRadius: 50%;
     margin: 1.5rem;
@@ -14,7 +14,7 @@ export const ProfileImage = styled(Image)`
 
 export const IntroSection = styled.section`
     text-align: center;
-    margin-top: 20rem;
+    margin-top: 5rem;
     margin-bottom: 10rem;
     display: flex;
     justify-content: center;

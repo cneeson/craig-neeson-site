@@ -4,7 +4,6 @@ import { Wrapper } from './Styled';
 
 const BlogPost = (props) => {
     const { post } = props;
-    console.log(props);
     return (
         <Wrapper>
             <h1>{post.frontmatter.title}</h1>

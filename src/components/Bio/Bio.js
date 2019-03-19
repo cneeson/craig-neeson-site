@@ -35,7 +35,7 @@ function Bio() {
                     <BioSection
                         title="Projects"
                         visualSource={projectsSvgUrl}
-                        content="I have been fortunate enough to be involved in the creation and maintenance of web-apps for many industries across Northern Ireland including manufacture, healthcare and e-commerce. Most of these projects have been fully bespoke, tailored to the specific business-needs of the customer in question, big or small. I have worked to develop highly scalable microservices for the US insurance consumer market, capable of processing millions of requests under an acceptable timeframe. My latest  role is as a UI engineer, building modern web systems to query and visualise one of the largest datasets in the world. "
+                        content="I have been fortunate enough to be involved in the creation and maintenance of web-apps for many industries across Northern Ireland including manufacture, healthcare and e-commerce. Most of these projects have been fully bespoke, tailored to the specific business-needs of the customer in question, big or small. I also have worked to develop highly scalable microservices for the US insurance consumer market, capable of processing millions of requests in an acceptable timeframe. My latest role is as a UI engineer, building modern web systems to query and visualise one of the largest datasets in the world. "
                     />
                     <ContactSection />
                 </Fragment>
