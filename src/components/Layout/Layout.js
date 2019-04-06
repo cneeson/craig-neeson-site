@@ -41,8 +41,8 @@ class Layout extends React.Component {
             {links}
           </div>
         </Nav>
+        {orbs}
         <PageWrapper>
-          {orbs}
           {children}
           {footer}
         </PageWrapper>

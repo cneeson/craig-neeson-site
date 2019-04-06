@@ -13,6 +13,8 @@ export const Nav = styled.nav`
     background: white;
     padding: 1rem;
     box-shadow: 0 10px 23px rgba(0,0,0,0.25), 0 3px 7px rgba(0,0,0,0.22);
+    position: relative;
+    z-index: 1;
 
     div{
         margin-left: auto;
