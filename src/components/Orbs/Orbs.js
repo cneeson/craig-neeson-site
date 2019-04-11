@@ -5,7 +5,6 @@ const VARIATIONS = 15;
 
 const colours = [
     'rgba(96, 74, 204, 0.12)',
-    // 'rgba(255, 0, 125, 0.5)',
     'rgba(199, 237, 255, 0.8)',
 ];
 // const getRandomOrbSize = () => Math.floor(Math.random() * 2.5) + 1;
