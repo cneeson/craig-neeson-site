@@ -1,58 +1,49 @@
 import React from 'react'
 import { Orb, Container } from './Styled';
 
+const VARIATIONS = 15;
+
 const colours = [
     'rgba(96, 74, 204, 0.12)',
-    'rgba(255, 0, 125, 0.5)',
+    // 'rgba(255, 0, 125, 0.5)',
     'rgba(199, 237, 255, 0.8)',
 ];
-const getRandomOrbSize = () => Math.floor(Math.random() * 2.5) + 0.5;
-const getRandomOrbCount = () => Math.floor(Math.random() * 40);
+// const getRandomOrbSize = () => Math.floor(Math.random() * 2.5) + 1;
+const getRandomOrbSize = () => Math.floor(Math.random() * 5) + 0.5;
 const getRandomAnimationDelay = () => Math.floor(Math.random() * 10);
 const getRandomOrbColor = () => colours[Math.floor(Math.random() * colours.length)];
 const getRandomPosition = () => {
     let rand = Math.floor(Math.random() * 4) + 1;
-    return rand *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;;
-}
+    return rand *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
+};
+const getOrbs = (variations) => shuffle(Array.from(Array(variations), (v, index) => generateOrbArray(index)).flat());
 
-const getOrbArray = () => {
+const generateOrbArray = (arrayKey) => {
     const size = getRandomOrbSize();
     const positionX = getRandomPosition();
-    const positionY = getRandomPosition();
+    const positionY = positionX;
     const animationdDelay = getRandomAnimationDelay();
 
-    Array.from(Array(50), (v, i) => {
-        return (<Orb key={i} size={size} positionY={positionY} positionX={positionX} colour={getRandomOrbColor} animationdDelay={animationdDelay} />);
+    return Array.from(Array(10), (v, i) => {
+        return (<Orb key={`${i}-${arrayKey}`} size={size} positionY={positionY} positionX={positionX} colour={getRandomOrbColor} animationdDelay={animationdDelay} />);
     })
-}
+};
 
-const Orbs = () => {
-    const orbCount = getRandomOrbCount();
+const shuffle = (array) => {
+    let currentIndex = array.length, temporaryValue, randomIndex;
 
-    // Get 4 variations of orb
-    // Print those out one by pne
+    while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
 
-    // const orbArray1 = Array.from(Array(50), (v, i) => {
-    //     const size = getRandomOrbSize();
-    //     const positionX = getRandomPosition();
-    //     const positionY = getRandomPosition();
-    //     const animationdDelay = getRandomAnimationDelay();
-    //     return (<Orb key={i} size={size} positionY={positionY} positionX={positionX} colour={getRandomOrbColor} animationdDelay={animationdDelay} />);
-    // })
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
 
+    return array;
+};
 
-    return (
-        <Container>
-            {/* {getOrbArray()} */}
-            {Array.from(Array(200), (v, i) => {
-                const size = getRandomOrbSize();
-                const positionX = getRandomPosition();
-                const positionY = getRandomPosition();
-                const animationdDelay = getRandomAnimationDelay();
-                return (<Orb key={i} size={size} positionY={positionY} positionX={positionX} colour={getRandomOrbColor} animationdDelay={animationdDelay} />);
-            })}
-        </ Container>
-    )
-}
+const Orbs = () => <Container>{getOrbs(VARIATIONS)}</Container>;
 
 export default Orbs

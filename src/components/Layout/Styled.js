@@ -37,7 +37,6 @@ export const Title = styled.h1`
     transition: all .2s;
 
     &:hover {
-        // background: linear-gradient(to right, #c1006f 0%, #0072f3 50%, #604acc 100%);
         background: radial-gradient(#0072f3, #604acc);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

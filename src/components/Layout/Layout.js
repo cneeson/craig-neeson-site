@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from '../Link'
-import Orbs from '../Orbs';
 import { PageWrapper, Nav, Title, TitleLink, LinkContainer, Footer } from './Styled'
 import "./layout.css"
 
@@ -17,10 +16,6 @@ const footer = (
   <Footer>
     © {new Date().getFullYear()} Craig Neeson
   </Footer>
-)
-
-const orbs = (
-  <Orbs />
 )
 
 class Layout extends React.Component {
@@ -41,7 +36,6 @@ class Layout extends React.Component {
             {links}
           </div>
         </Nav>
-        {orbs}
         <PageWrapper>
           {children}
           {footer}

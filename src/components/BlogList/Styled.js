@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Link from '../Link'
 
 export const Wrapper = styled.div`
-    margin-top: 10rem;
+    margin-top: 2.5rem;
 
     @media (max-width: 650px) {
         margin-top: 5rem;
