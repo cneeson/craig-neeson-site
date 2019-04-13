@@ -7,10 +7,49 @@ isNote: true
 
 Notes collected and tidied up a bit from my trip to [ReactAmsterdam2019](https://react.amsterdam/).
 
-## 07.30 Registration
-## 08.00 Welcome Breakfast
-## 09.00 Conference Opening
-## 09.20 **Requisite React** - [Kent C. Dodds](https://github.com/kentcdodds)
+---
+
+## Contents
+**07.30** - [Registration](#id-registration)  
+**08.00** - [Welcome Breakfast](#id-welcome-breakfast)  
+**09.00** - [Conferance Opening](#id-conference-opening)  
+**09.20** - [Requisite React - Kent C. Dodds ](#id-requisite-react)  
+**09.50** - [Refactoring React - Siddharth Kshetrapal](#id-refactoring-react)  
+**10.20** - [Coffee Break](#id-coffee-break-1)  
+**10.50** - [A Common Design Language - Andrey Okonetchnikov](#id-common-design-language)  
+**11.20** - [Designing with React - Mark Dalgleish](#id-designing-with-react)  
+**11.50** - [Lightning Talks](#id-lightning-talks)  
+**12.20** - [Lunch Break](#id-lunch-break)  
+**13.20** - [GitNation Open Source Stage](#id-oss)  
+**13.50** - [Tech Regrets at Spectrum - Max Stoiber](#id-tech-regrets-at-spectrum)  
+**14.20** - [Scaling Applications with Microfrontends - Max Gallo](#id-microfrontends)  
+**14.50** - [An SVGs Tale - Elizabet Oliveira](#id-svg)  
+**15.20** - [Coffee Break](#id-coffee-break-2)  
+**15.50** - [React Open Source Awards](#id-oss-awards)  
+**16.10** - [The GraphQL Developer Experience - Peggy Rayzis](#id-graphql-dev-experience)  
+**16.35** - [One-on-one Session - Andrey Okonetchnikov](#id-one-on-one)  
+**16.40** - [Painting Pixels with WebGL and React Hooks - Ashi Krishnan](#id-webgl)  
+**17.10** - [Talks section closing and announcements](#id-closing)  
+
+---
+
+## Notes
+
+<div id='id-registration'/>
+
+### 07.30 - Registration
+
+<div id='id-welcome-breakfast'/>
+
+### 08.00 - Welcome Breakfast
+
+<div id='id-conference-opening'/>
+
+### 09.00 - Conference Opening
+
+<div id='id-requisite-react'/>
+
+### 09.20 - **Requisite React** - [Kent C. Dodds](https://github.com/kentcdodds)
 
 High Level talk with an emphasis on people who want to up their React skills. To do so effectively, we need to take things back to basics and try to understand the abstractions that we use every day at a lower level.
 
@@ -23,7 +62,9 @@ High Level talk with an emphasis on people who want to up their React skills. To
 * The final example used is understanding the newer hooks APIs. One common pitfall is that the order that hooks are initialised matters, and getting them in the wrong order can cause bugs. Understanding what happens underneath the API can help us with debugging some of this. 
 * Final takeaway: if we want to level up our React skills, try to build something that you use at an abstracted layer, try to build lodash or a hooks implementation.
 
-## 09.50 **Refactoring React** - [Siddharth Kshetrapal](https://github.com/siddharthkp)
+<div id='id-refactoring-react'/>
+
+### 09.50 - **Refactoring React** - [Siddharth Kshetrapal](https://github.com/siddharthkp)
 
 Sidd is an independent dev who mostly works on tooling for frontend devs. Talk was very useful, went through what looked to be a normal class component and pointed out a few code smells and how we might fix them. Primary takeaway is the list of code smells mentioned.
 
@@ -77,9 +118,13 @@ render() {
 </ParentCom>
 ```
 
-## 10.20 Coffee Break
+<div id='id-coffee-break-1'/>
 
-## 10.50 **A Common Design Language. Let Designers and Devs talk to eachother** - [Andrey Okonetchnikov](https://github.com/okonet)
+### 10.20 - Coffee Break
+
+<div id='id-common-design-language'/>
+
+### 10.50 - **A Common Design Language. Let Designers and Devs talk to eachother** - [Andrey Okonetchnikov](https://github.com/okonet)
 
 Andrey is a freelance dev from Austria who has a deep understanding of design and component systems. Primary takeaway are his interesting thoughts on breaking components down so that they are composed of many primitive components, which then share a commonality with the same primitives that UX folks are used to when creating designs.
 
@@ -92,7 +137,9 @@ Andrey is a freelance dev from Austria who has a deep understanding of design an
 * Interesting project to check out is [ant-sketchapp](https://github.com/ant-design/antd-sketchapp), Ant seem to have got an interesting implementation of the sketchapp tool.
 * [component-driven.io](https://component-driven.io/) is a site hosting his newsletter, based off the info in the talk, would be good to keep up to date with Andreys findings.
 
-## 11.20 **Designing with React** - [Mark Dalgleish](https://github.com/markdalgleish)
+<div id='id-designing-with-react'/>
+
+### 11.20 - **Designing with React** - [Mark Dalgleish](https://github.com/markdalgleish)
 
 Awesome talk from Mark Dalgleish who works for [Seek software](https://www.seek.com.au/) in Australia. Primary takeaway was the Playroom project and the thought that we as devs should be creating component libraries that are so straightforward that designers should be able to use them to prototype things too.
 
@@ -116,15 +163,21 @@ Awesome talk from Mark Dalgleish who works for [Seek software](https://www.seek.
 * Playroom will hopefully become the first place that people go to mock up new designs for Flexera's products.
 * **We need a page in the CL that better explains the role of Playroom and the fact that it is not just an interesting toy**
 
-## 11.50 Lightning Talks
+<div id='id-lightning-talks'/>
+
+### 11.50 - Lightning Talks
 
 Not alot of notes taken as all the presentations were about SSR.
 
 * **Mark from [Nearform](https://www.nearform.com/)** - talks about how Nearform have developed new methods to speed up the algorithms with which Server Side Rendering is accomplished. Interestingly the key to many of the speed ups was the use of tagged template literals.
 
-## 12.20 Lunch Break
+<div id='id-lunch-break'/>
 
-## 13.20 GitNation Open Source Stage
+### 12.20 - Lunch Break
+
+<div id='id-oss'/>
+
+### 13.20 - GitNation Open Source Stage
 
 [GitNation](https://gitnation.org/) present a few awards to developers who have brought exciting new open source software to the market every year. The actual awards were later in the day, but GitNation allowed a few devs who were onsite to pitch their ideas. Presentations:
 
@@ -147,7 +200,9 @@ Not alot of notes taken as all the presentations were about SSR.
     * Seen this popup on reddit about 6 months ago, is a service that can be used to nicely present the differences between GitHub files. Sort of like blame but alot nicer.
     * Tryed to bring home the importance of intuitive tooling, and how we achieve the exact same thing (minus the pretty animations) with a few flags on `git log`. Theorises that most people never read the full `git` manual and so getting more complex results out of the tool is something that never happens for most users.
 
-## 13.50 **Tech Regrets at Spectrum** - [Max Stoiber](https://github.com/mxstbr)
+<div id='id-tech-regrets-at-spectrum'/>
+
+### 13.50 - **Tech Regrets at Spectrum** - [Max Stoiber](https://github.com/mxstbr)
 
 High level talk that dives into a few of the technical decisions made at Max's latest company - [Spectrum](https://github.com/mxstb). One of the best talks of the day describing the pitfalls of making bad decisions and not proofing things out before going to implementation.
 
@@ -180,7 +235,9 @@ High level talk that dives into a few of the technical decisions made at Max's l
     * **Lesson 5:** Deliberately assess cutting edge tech, bias towards conservative choices. Will be the last time Max uses something new and shiny without proofing it out first.
     * **Lesson 6:** Be open with your roadmap to learn about your users priorities. Had Max have asked his users what they wanted before implementing, it would have been a little more obvious that they, as developers, would prefer a markdown editing experience anyway as that is what they are used to.
 
-## 14.20 **Scaling Applications with Microfrontends** - [Max Gallo](https://github.com/maxgallo)
+<div id='id-microfrontends'/>
+
+### 14.20 - **Scaling Applications with Microfrontends** - [Max Gallo](https://github.com/maxgallo)
 
 Works for a high profile entertainment streaming company called [DAZN](https://www.dazn.com/). Talk focuses on performance, scalability, and getting UI teams to a state where they can make decisions by themselves, without affecting other areas of the overall frontend product.
 
@@ -195,7 +252,9 @@ Works for a high profile entertainment streaming company called [DAZN](https://w
 * Interestingly Max was against the idea of component libraries, each team implements indivudally. The primary argument against them is again the communication overhead, having a share library would require teams to make agreements about things, which slows the process down. This way, teams can ship code whenever they want, if it is at different rates - that is OK. He said it is common for different pages to have different version numbers, which perfectly illustrates how they are managed by entirely separate teams.
 * Interesting views in terms of serving separate frontends and keeping things highly modular, would be interesting to know how they orchestrate UX changes between teams, how that is even remotely kept in sync if they do not share common components.
 
-## 14.50 **An SVGs Tale** - [Elizabet Oliveira](https://github.com/miukimiu)
+<div id='id-svg'/>
+
+### 14.50 - **An SVGs Tale** - [Elizabet Oliveira](https://github.com/miukimiu)
 
 Design-focused talk, Elizabet chats about how SVG and React integrates really well with eachother if you plan things out well.
 
@@ -204,9 +263,13 @@ Design-focused talk, Elizabet chats about how SVG and React integrates really we
 * Best way that Elizabet had found was to import them from a separate file and wrap them up as React components. This approach would allow for you to keep all of the benefits of the inline SVG, but not have to look at the massive code footprint that would be in your JSX. 
 * Demoed a tape player component, which was made up of many smaller wrapped SVGs. The interesting part was that she could pass in props to each of the sub-components, which in turn would be mapped onto the style of the individual SVGs, seems like a really flexible and manageable way to build large graphics up.
 
-## 15.20 Coffee Break
+<div id='id-coffee-break-2'/>
 
-## 15.50 React Open Source Awards
+### 15.20 - Coffee Break
+
+<div id='id-oss-awardsg'/>
+
+### 15.50 - React Open Source Awards
 
 Awards ceremony for the best open source project this year, there were alot of tools and packages that I had never heard of in this list so it would definitely be worth doing a bit of research on each to see if there is anything we could use. The most obvious one is `react-navigation`, would be interesting to see what this one is all about.
 
@@ -235,9 +298,13 @@ Awards ceremony for the best open source project this year, there were alot of t
     * [Mdx-deck](https://github.com/jxnblk/mdx-deck) (won)
     * [React-table](https://github.com/tannerlinsley/react-table)
 
-## 16.10 **The GraphQL Developer Experience** - Peggy Rayzis (missed)
+<div id='id-graphql-dev-experience'/>
 
-## 16.35 **One-on-one Session** Andrey Okonetchnikov
+### 16.10 - **The GraphQL Developer Experience** - Peggy Rayzis (missed)
+
+<div id='id-one-on-one'/>
+
+### 16.35 - **One-on-one Session** Andrey Okonetchnikov
 
 Since the final few talks of the day weren't 100% relevant to what I am doing right now, I was lucky enough to get booked in with Andrey Okonetchnikov for a one-on-one session. The primary focus here was getting some critical feedback on our current iterations of the component library, Andrey is an expert in design systems and so his feedback was excellent and very useful.
 
@@ -253,8 +320,12 @@ Since the final few talks of the day weren't 100% relevant to what I am doing ri
 * Was a fan of the react app we are using for the component library but would steer us strongly towards using something third party. I mentioned that we had used storybook in the past and although it had some good plugins, it was difficult to brand and to add good, structured documentation to. An alternative that he suggested was `styleguidist`, a project he had worked closely on. After demoing a few features, this seems like something that we really want to proof out, it had excellent plugin support for inline editing, code snippets, markdown can be used for documentation, and he showed off a plugin that generates a props table from static typescript (which is something that I literally was not smart enough to figure out a few months ago.) Overall this seems like it would be a good move, but it does need proofed out, a secondary concern is style parity with the design-kit repo, it was not 100% clear how much control and flexibility we get around styling of the overall site. If the CL usability is highly improved due to moving to styleguidist, it might be worth the potential style disparity. 
 * Another good point he made about one of the other speakers was the use of booleans as props that signify visual things. He is not a fan of this approach due to the fact that combinations can leave a component in an odd state. For example `<Text type="secondary" isHero>My Title</Text>`, it would be strange to have a bit of typography with a `secondary` type to also look like a hero. Sticking to enumerated lists solves this problem.
 
-## 16.40 **Painting Pixels with WebGL and React Hooks** - Ashi Krishnan (missed)
+<div id='id-webgl'/>
 
-## 17.10 Talks section closing and announcements
+### 16.40 - **Painting Pixels with WebGL and React Hooks** - Ashi Krishnan (missed)
+
+<div id='id-closing'/>
+
+### 17.10 - Talks section closing and announcements
 
 The conference has run every year since 2016, if you want to find out more, check out their [website](https://react.amsterdam/).

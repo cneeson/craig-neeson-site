@@ -5,7 +5,6 @@ import Tag from '../Tag';
 
 const BlogPost = (props) => {
     const { post } = props;
-    console.log(post)
     return (
         <Wrapper>
             <h1>{post.frontmatter.title}</h1>
