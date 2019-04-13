@@ -256,3 +256,5 @@ Since the final few talks of the day weren't 100% relevant to what I am doing ri
 ## 16.40 **Painting Pixels with WebGL and React Hooks** - Ashi Krishnan (missed)
 
 ## 17.10 Talks section closing and announcements
+
+The conference has run every year since 2016, if you want to find out more, check out their [website](https://react.amsterdam/).

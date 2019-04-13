@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-    margin-top: 5rem;
+    margin-top: 3rem;
 
     a {
         color: #ff007d;
@@ -11,6 +11,13 @@ export const Wrapper = styled.div`
     }
 
     @media (max-width: 650px) {
-        margin-top: 3rem;
+        margin-top: 2rem;
+    }
+`;
+
+export const SubHeading = styled.div`
+
+    span {
+        margin-right: 0.5rem;
     }
 `;

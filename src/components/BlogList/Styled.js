@@ -21,7 +21,7 @@ export const BlogCard = styled(Link)`
     transition: .1s all;
 
     &:hover{
-        box-shadow: 5px 5px rgba(193, 0, 111, 0.28), -5px -5px rgba(96, 74, 204, 0.26);
+        box-shadow: 5px 5px rgba(96, 74, 204, 0.26), -5px -5px rgba(193, 0, 111, 0.28);
         background-color: #f2f2f3;
         transform: scale(1.02, 1.02);
     }
@@ -41,4 +41,8 @@ export const PreviewText = styled.p`
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+`;
+
+export const TagContainer = styled.div`
+    margin: 0.5rem 0;
 `;
