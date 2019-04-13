@@ -12,7 +12,7 @@ Notes collected and tidied up a bit from my trip to [ReactAmsterdam2019](https:/
 ## Contents
 **07.30** - [Registration](#id-registration)  
 **08.00** - [Welcome Breakfast](#id-welcome-breakfast)  
-**09.00** - [Conferance Opening](#id-conference-opening)  
+**09.00** - [Conference Opening](#id-conference-opening)  
 **09.20** - [Requisite React - Kent C. Dodds ](#id-requisite-react)  
 **09.50** - [Refactoring React - Siddharth Kshetrapal](#id-refactoring-react)  
 **10.20** - [Coffee Break](#id-coffee-break-1)  
