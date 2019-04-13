@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Craig Neeson`,
     author: `Craig Neeson`,
-    description: `The personal blog of Craig Neeson - Software Developer.`,
-    siteUrl: `http://www.craigneeson.co.uk`,
+    description: `The personal blog of Craig Neeson - Software Engineer.`,
+    siteUrl: `https://www.craigneeson.co.uk`,
   },
   plugins: [
     'gatsby-plugin-svgr',
