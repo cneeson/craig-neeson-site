@@ -3,6 +3,7 @@ title: ReactAmsterdam 2019 Conference Notes
 date: '2019-04-12T23:59:59.121Z'
 timeToRead: '5 minute'
 isNote: true
+isPublished: true
 ---
 
 Notes collected and tidied up a bit from my trip to [ReactAmsterdam2019](https://react.amsterdam/).

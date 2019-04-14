@@ -21,6 +21,7 @@ exports.createPages = ({ graphql, actions }) => {
                 title
                 timeToRead
                 isNote
+                isPublished
               }
             }
           }

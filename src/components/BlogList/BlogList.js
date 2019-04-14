@@ -6,7 +6,7 @@ const BlogList = (props) => {
   return (
     <Wrapper>
       {
-        props.blogs.map(({ node }) => {
+        props.blogs.length > 0 ? props.blogs.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <BlogCard key={node.fields.slug} to={node.fields.slug}>
@@ -22,7 +22,7 @@ const BlogList = (props) => {
               <PreviewText dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </BlogCard>
           )
-        })
+        }) : <h2>No blogs</h2>
       }
     </Wrapper>
   )

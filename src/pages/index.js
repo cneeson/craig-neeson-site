@@ -15,6 +15,7 @@ class HomePage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <Orbs />
         <SEO
+          lang="en"
           title="Home"
           keywords={[`craig`, `neeson`, `craig neeson`, `developer`, `northern ireland`, `NI`, `belfast`, `blog`, `gatsby`, `javascript`, `react`]}
         />
