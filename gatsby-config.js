@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://www.craigneeson.co.uk`,
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-svgr',
     {
       resolve: `gatsby-source-filesystem`,
