@@ -1,0 +1,30 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@develop
+      - uses: borales/actions-yarn@v2.0.0
+      - name: Yarn Install
+        with:
+          cmd: install
+      - name: Yarn Build
+        with:
+          cmd: build
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@develop
+      - uses: feeloor/azure-static-website-deploy@master
+        env:
+          SOURCE_DIR: "./public"
+          AZURE_CLIENT_ID: "<azure-client-id>"
+          AZURE_TENANT_ID: "<azure-tenant-id>"
+          AZURE_SECRET: "<azure-secret>"
+          AZURE_SUBSCRIPTION_ID: "<azure-subscription-id>"
+          AZURE_STORAGE_ACCOUNT_NAME: "<azure-storage-account-name>"
+          AZURE_INDEX_DOCUMENT_NAME: "<index-document-name>"
+          AZURE_ERROR_DOCUMENT_NAME: "<error-document-name>"
