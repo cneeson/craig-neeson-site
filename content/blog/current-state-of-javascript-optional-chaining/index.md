@@ -6,6 +6,8 @@ isNote: false
 isPublished: true
 ---
 
+![chaining](./chain.jpeg)
+
 The [ECMAScript 2019 specification](https://www.ecma-international.org/ecma-262/10.0/index.html) has been out for a while now (a full year to be exact), but as many front-end developers will know - it takes a while for new features to come into support for browsers, and it takes even longer for adoption and confidence in the new features to rise throughout the community. Luckily for us, the start of 2020 ushers in a few options to take advantage of these new features. 
 
 One of the biggest game changers for me personally is [Optional Chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining). Through just a small addition to the language syntax, the spec aims to reduce some of the more repetitive (and ugly) code that developers are forced to write when dealing with deeply nested objects.
