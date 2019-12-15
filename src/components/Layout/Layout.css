@@ -1,0 +1,9 @@
+.gatsby-highlight {
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+}
+
+:not(pre) > code[class*="language-"] {
+    font-size: 0.9rem;
+    padding: .05rem .5rem;
+}
