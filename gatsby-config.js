@@ -5,6 +5,7 @@ module.exports = {
     description: `The personal blog of Craig Neeson - Software Engineer.`,
     siteUrl: `https://www.craigneeson.co.uk`,
   },
+  pathPrefix: "/craig-neeson-site",
   plugins: [
     'gatsby-plugin-sitemap',
     'gatsby-plugin-svgr',

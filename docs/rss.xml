@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Craig Neeson]]></title><description><![CDATA[The personal blog of Craig Neeson - Software Engineer.]]></description><link>https://www.craigneeson.co.uk</link><generator>RSS for Node</generator><lastBuildDate>Fri, 27 Mar 2020 21:13:00 GMT</lastBuildDate><item><title><![CDATA[Three Takeaways from ReactAmsterdam 2019]]></title><description><![CDATA[As one of the biggest React conferences in Europe, ReactAmsterdam has attracted some of the worlds top speakers since its inception in 201…]]></description><link>https://www.craigneeson.co.uk/three-takeaways-from-react-amsterdam-2019/</link><guid isPermaLink="false">https://www.craigneeson.co.uk/three-takeaways-from-react-amsterdam-2019/</guid><pubDate>Tue, 07 May 2019 23:59:59 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Craig Neeson]]></title><description><![CDATA[The personal blog of Craig Neeson - Software Engineer.]]></description><link>https://www.craigneeson.co.uk</link><generator>RSS for Node</generator><lastBuildDate>Fri, 27 Mar 2020 21:26:44 GMT</lastBuildDate><item><title><![CDATA[Three Takeaways from ReactAmsterdam 2019]]></title><description><![CDATA[As one of the biggest React conferences in Europe, ReactAmsterdam has attracted some of the worlds top speakers since its inception in 201…]]></description><link>https://www.craigneeson.co.uk/three-takeaways-from-react-amsterdam-2019/</link><guid isPermaLink="false">https://www.craigneeson.co.uk/three-takeaways-from-react-amsterdam-2019/</guid><pubDate>Tue, 07 May 2019 23:59:59 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f67870460f1347f9e9f60aa2b3916cf2/451b6/reactamsterdam.png&quot;
+    href=&quot;/craig-neeson-site/static/f67870460f1347f9e9f60aa2b3916cf2/451b6/reactamsterdam.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -20,12 +20,12 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;react-amsterdam&quot;
         title=&quot;&quot;
-        src=&quot;/static/f67870460f1347f9e9f60aa2b3916cf2/b9e4f/reactamsterdam.png&quot;
-        srcset=&quot;/static/f67870460f1347f9e9f60aa2b3916cf2/cf440/reactamsterdam.png 148w,
-/static/f67870460f1347f9e9f60aa2b3916cf2/d2d38/reactamsterdam.png 295w,
-/static/f67870460f1347f9e9f60aa2b3916cf2/b9e4f/reactamsterdam.png 590w,
-/static/f67870460f1347f9e9f60aa2b3916cf2/f9b6a/reactamsterdam.png 885w,
-/static/f67870460f1347f9e9f60aa2b3916cf2/451b6/reactamsterdam.png 1068w&quot;
+        src=&quot;/craig-neeson-site/static/f67870460f1347f9e9f60aa2b3916cf2/b9e4f/reactamsterdam.png&quot;
+        srcset=&quot;/craig-neeson-site/static/f67870460f1347f9e9f60aa2b3916cf2/cf440/reactamsterdam.png 148w,
+/craig-neeson-site/static/f67870460f1347f9e9f60aa2b3916cf2/d2d38/reactamsterdam.png 295w,
+/craig-neeson-site/static/f67870460f1347f9e9f60aa2b3916cf2/b9e4f/reactamsterdam.png 590w,
+/craig-neeson-site/static/f67870460f1347f9e9f60aa2b3916cf2/f9b6a/reactamsterdam.png 885w,
+/craig-neeson-site/static/f67870460f1347f9e9f60aa2b3916cf2/451b6/reactamsterdam.png 1068w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -36,7 +36,7 @@
 &lt;p&gt;As one of the biggest React conferences in Europe, &lt;a href=&quot;https://react.amsterdam/&quot;&gt;ReactAmsterdam&lt;/a&gt; has attracted some of the worlds top speakers since its inception in 2016. This year, I had the chance to see some of these speakers and to get an idea of where the world of React is going.&lt;/p&gt;
 &lt;p&gt;The conference events lasted for four days. Workshops are held over the first two days on a topics like GraphQL and Serverless, each led by experts in their fields. The third is the conference day, and the last is a comprehensive tour day around the city of Amsterdam. &lt;/p&gt;
 &lt;p&gt;The conference day was split into two tracks, one for React and one for React Native. The organisers had made alot of effort to accomodate people who wanted to attend talks from both tracks, intentionally leaving five minutes between sessions to allow attendees to get to the other hall.&lt;/p&gt;
-&lt;p&gt;I have a terrible memory, and so one of the things that I knew I would need to do is &lt;a href=&quot;/react-amsterdam-notes/&quot;&gt;document&lt;/a&gt; every bit of information from the day, else it be lost forever. Looking back over the notes, it is clear that there are a few trends lying in the conference content, and these trends best represent the takeaways from the conference as a whole:&lt;/p&gt;
+&lt;p&gt;I have a terrible memory, and so one of the things that I knew I would need to do is &lt;a href=&quot;/craig-neeson-site/react-amsterdam-notes/&quot;&gt;document&lt;/a&gt; every bit of information from the day, else it be lost forever. Looking back over the notes, it is clear that there are a few trends lying in the conference content, and these trends best represent the takeaways from the conference as a whole:&lt;/p&gt;
 &lt;h2&gt;Write your own tools sometimes, but know when not to.&lt;/h2&gt;
 &lt;p&gt;One of the themes for me personally this year is attempting to make a more conscious decision around when to build utilities and helpers from scratch and when to just vendor them in. In a separate article I discuss the various trials and tribulations I went through with iterating over this blog platform’s design, which included alot of ‘reinventing the wheel’, but ultimately allowed me to learn alot about areas of the stack that I otherwise would never touch.&lt;/p&gt;
 &lt;p&gt;There were a few potent anecdotes from ReactAmsterdam around this very topic. The day kicked off with a &lt;a href=&quot;https://youtu.be/4KfAS3zrvX8?t=1400&quot;&gt;talk&lt;/a&gt; from React Trainer &lt;a href=&quot;https://kentcdodds.com/&quot;&gt;Kent C. Dodds&lt;/a&gt; called ‘Requisite React’. &lt;/p&gt;
