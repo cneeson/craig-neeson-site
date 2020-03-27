@@ -7,9 +7,14 @@ const BlogList = (props) => {
     <Wrapper>
       {
         props.blogs.length > 0 ? props.blogs.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
+          const title = node.frontmatter.title || node.fields.slug;
+
+          const destination = node.fields.isExternalBlog
+            ? { href: node.fields.externalUrl, target: '_blank' }
+            : { to: node.fields.slug };
+          
           return (
-            <BlogCard key={node.fields.slug} to={node.fields.slug}>
+            <BlogCard key={node.fields.slug} {...destination}>
               <Title>
                 {title}
               </Title>

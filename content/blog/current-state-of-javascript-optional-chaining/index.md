@@ -1,0 +1,108 @@
+---
+title: The Current State of JavaScript Optional Chaining in 2020
+date: '2019-12-15T23:59:59.121Z'
+timeToRead: '3 minute'
+isNote: false
+isPublished: true
+---
+
+![chaining](./chain.jpeg)
+
+The [ECMAScript 2019 specification](https://www.ecma-international.org/ecma-262/10.0/index.html) has been out for a while now (a full year to be exact), but as many front-end developers will know - it takes a while for new features to come into support for browsers, and it takes even longer for adoption and confidence in the new features to rise throughout the community. Luckily for us, the start of 2020 ushers in a few options to take advantage of these new features. 
+
+One of the biggest game changers for me personally is [Optional Chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining). Through just a small addition to the language syntax, the spec aims to reduce some of the more repetitive (and ugly) code that developers are forced to write when dealing with deeply nested objects.
+
+## So what is it?
+
+Optional chaining operators, or as they are more commonly known in other languages - 'Null-Conditional Operators' have been available for languages like [C#](https://docs.microsoft.com/en-gb/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-) for a while now. Say we have a deeply nested object like this:
+
+```js
+const deepObj = {
+    firstLevelA: {
+        secondLevel: {
+            thirdLevel: {
+                stringVal: 'Hello World!',
+                numVal: 5298
+            }
+        }
+    },
+    firstLevelB: {},
+    firstLevelC: {}
+};
+```
+
+One of the more clunky tasks in JavaScript is safely retrieving one of the deeply nested values here. The clunkiness comes from the need to ensure that our target key at each level exists - before accessing its properties. Failing to do so will result in the dreaded `Uncaught TypeError: Cannot read property '<keyName>' of undefined` error. 
+
+To access `stringVal` safely using pre-ES2019 code, we would do something like this:
+
+```js
+const theStringVal = deepObj.firstLevelA && 
+    deepObj.firstLevelA.secondLevel && 
+    deepObj.firstLevelA.secondLevel.thirdLevel &&
+    deepObj.firstLevelA.secondLevel.thirdLevel.stringVal;
+
+console.log(theStringVal);
+// 'Hello World!'
+```
+
+A bit verbose, isn't it? This is especially troublesome for things like API responses where the developer cannot _guarantee_ the shape of the object that is returned. 
+
+A potential improvement could be to [destructure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) the `deepObj` and assign the value of `stringVal` to a new variable that is in scope:
+
+```js
+const { 
+    firstLevelA: { 
+        secondLevel: { 
+            thirdLevel: { stringVal, nonExistentKey } 
+        } 
+    } 
+} = deepObj;
+
+console.log(stringVal);
+// 'Hello World'
+
+console.log(nonExistentKey);
+// undefined
+```
+
+The primary benefit we get here is that if any of the destructured keys do not exist, the `stringVal` variable will default to `undefined` - avoiding the `TypeError`.
+
+## A Better Way
+
+The Optional Chaining operator looks like this: `?.`. Here it is in action with our example object:
+
+```js
+const theStringVal = deepObj?.firstLevelA?.secondLevel?.thirdLevel?.stringVal;
+```
+
+All of the intermediate key-checking has been removed and each check is now performed implicitly by the `?.` operator. If any of the keys in the chain do not exist then `undefined` will be returned.
+
+The operator also works using array notation:
+
+```js
+const theStringVal = deepObj?.['firstLevelA']?.['secondLevel']?.['thirdLevel']?.['stringVal'];
+```
+
+And for safely invoking functions that may or may not exist in objects.
+
+```js
+const result = obj?.someNamespace.myFunction?.();
+```
+
+## Browser compatibility
+
+At the time of writing, optional chaining is only available for use under an experimental flag in [Chrome 79](https://caniuse.com/#feat=mdn-javascript_operators_optional_chaining). 
+
+## So how can I use it?
+
+For TypeScript users, optional chaining has been available since November 2019 in [TS 3.7](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html). The syntax is identical to vanilla JavaScript, so all of the same examples will work there. For JavaScript users, [Babel](https://babeljs.io/) has released a [plugin](https://babeljs.io/docs/en/babel-plugin-proposal-optional-chaining) that makes the operator available for use. 
+
+## Safe for production?
+
+Although the operator is still considered an 'experimental' feature - we can be fairly confident that the syntax will not change due to its similarity with other languages that operate in the same way. The only thing that could change is the 'under-the-hood' implementation in whichever JavaScript engine you are running against, but even then the expected behaviour has been agreed upon at this point. That worry is also negated by the fact that your code is likely to be normalised by the TypeScript or Babel compiler before hitting it's destination engine anyway.
+
+## A data-access win
+
+Optional chaining is just one of many newer features to come to JavaScript, keep track of new features that are in stage 3 in the ECMAScript proposals [GitHub repository](https://github.com/tc39/proposals).
+
+Thanks for reading :)
