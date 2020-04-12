@@ -26,29 +26,29 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-b1bb6685b3839c53dc1b.js"
+    "url": "webpack-runtime-9b67af8f936668faef70.js"
   },
   {
-    "url": "styles.c5540664ecfab3e9128a.css"
+    "url": "styles.cc59e263c60bbdbf7850.css"
   },
   {
     "url": "styles-f620cc7ed8aabc69427d.js"
   },
   {
-    "url": "app-af7892c833cb2c751669.js"
+    "url": "app-db73cd37d36464cb7794.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-e545edf7de327e2803a7.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "f21c5690dcb17b8c7e4215e8a5af6dad"
+    "revision": "4ea47b5a39a9d8bcb962ce1eea9b0710"
   },
   {
-    "url": "component---src-pages-404-js-be58b8ce1bcf330487e1.js"
+    "url": "component---src-pages-404-js-3a203d9adcd964d863af.js"
   },
   {
-    "url": "1-6ee2b72d43c532a01a89.js"
+    "url": "1-28fdacc076b138d4b57c.js"
   },
   {
     "url": "static/d/233/path---404-html-516-62a-sHMtsm0mkrz6wAxA7RTmDRG4.json"
@@ -58,7 +58,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "3dec61d896c6f2d245ea470c79c74f5f"
+    "revision": "68b00ea96d95692d43aecb7f281d71a7"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -79,7 +79,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/craig-neeson-site/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -151,7 +151,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `/craig-neeson-site${pathname}`
+        return `${pathname}`
       } else {
         return pathname
       }
