@@ -8,7 +8,7 @@ const links = (
     <Link to="/#about" fancyHover>About</Link>
     <Link to="/#contact" fancyHover>Contact</Link>
     <Link to="/blogs" fancyHover>Blog</Link>
-    <Link href="/Craig-Neeson-CV.pdf" fancyHover>CV</Link>
+    <Link href={`/Craig-Neeson-CV.pdf`} fancyHover>CV</Link>
   </LinkContainer>
 )
 

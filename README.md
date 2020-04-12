@@ -4,9 +4,7 @@ Craig Neeson's personal blog site, based off the awesome [gatsby-starter-blog](h
 
 ## Deployment
 
-* Pushes to master trigger a build hosted in Azure DevOps.
-* Build will:
-    * Run a production build
-    * Purge contents of Azure storage container
-    * Replace content with new artefact
-    * Purge the craigneeson CDN endpoint for the changes to be propagated to the edge servers
+* Run `yarn build` to build website into the `docs` directory
+* Copy CNAME file from root to the `docs` directory
+* Commit and push changes to the `master` branch
+* GitHub Pages will re-deploy the website. :thumbsup
