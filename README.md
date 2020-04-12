@@ -5,5 +5,6 @@ Craig Neeson's personal blog site, based off the awesome [gatsby-starter-blog](h
 ## Deployment
 
 * Run `yarn build` to build website into the `docs` directory
+* Copy CNAME file from root to the `docs` directory
 * Commit and push changes to the `master` branch
 * GitHub Pages will re-deploy the website. :thumbsup

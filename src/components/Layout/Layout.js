@@ -2,14 +2,13 @@ import React from 'react'
 import Link from '../Link'
 import { PageWrapper, Nav, Title, TitleLink, LinkContainer, Footer } from './Styled'
 import "./layout.css"
-import { pathPrefix } from '../../../gatsby-config';
 
 const links = (
   <LinkContainer>
     <Link to="/#about" fancyHover>About</Link>
     <Link to="/#contact" fancyHover>Contact</Link>
     <Link to="/blogs" fancyHover>Blog</Link>
-    <Link href={`${pathPrefix}/Craig-Neeson-CV.pdf`} fancyHover>CV</Link>
+    <Link href={`/Craig-Neeson-CV.pdf`} fancyHover>CV</Link>
   </LinkContainer>
 )
 
