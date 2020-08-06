@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from '../Link'
-import { PageWrapper, Nav, Title, TitleLink, LinkContainer, Footer } from './Styled'
+import { PageWrapper, BodyWrapper, Nav, Title, TitleLink, LinkContainer, Footer } from './Styled'
 import "./layout.css"
 
 const links = (
@@ -29,18 +29,18 @@ class Layout extends React.Component {
     )
 
     return (
-      <div className="body-wrapper">
+      <PageWrapper>
         <Nav>
           <div>
             {brand}
             {links}
           </div>
         </Nav>
-        <PageWrapper>
+        <BodyWrapper>
           {children}
           {footer}
-        </PageWrapper>
-      </div>
+        </BodyWrapper>
+      </PageWrapper>
     )
   }
 }

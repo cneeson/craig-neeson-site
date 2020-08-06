@@ -13,7 +13,6 @@ class HomePage extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <Orbs />
         <SEO
           lang="en"
           title="Home"

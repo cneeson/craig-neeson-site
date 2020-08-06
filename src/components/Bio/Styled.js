@@ -30,7 +30,7 @@ export const IntroSection = styled.section`
 `
 export const Tagline = styled.p`
     font-size: 1.5rem;
-    line-height: 1.6;
+    line-height: 2;
 
     @media (max-width: 650px) {
         font-size: 1.2rem;

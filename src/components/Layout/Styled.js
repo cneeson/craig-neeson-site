@@ -3,6 +3,10 @@ import { InternalLink, ExternalLink } from '../Link/Styled'
 import { rhythm } from '../../utils/typography'
 
 export const PageWrapper = styled.div`
+    padding-top: 2rem;
+`;
+
+export const BodyWrapper = styled.div`
     margin-left: auto;
     margin-right: auto;
     max-width: ${rhythm(24)};
@@ -12,8 +16,8 @@ export const PageWrapper = styled.div`
 export const Nav = styled.nav`
     background: white;
     padding: 1rem;
-    box-shadow: 0 10px 23px rgba(0,0,0,0.25), 0 3px 7px rgba(0,0,0,0.22);
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 1;
 
     div{

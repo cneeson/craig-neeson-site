@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import projectsSvgUrl from '../../../content/assets/projects-image.svg';
 import codeSvgUrl from '../../../content/assets/code-image.svg';
+import Link from '../Link'
 import BioSection from '../BioSection';
 import ContactSection from '../ContactSection';
 import InvisibleAnchor from '../InvisibleAnchor';
@@ -23,7 +24,7 @@ function Bio() {
                             <Tagline>
                                 Hi, I'm <strong>{data.site.siteMetadata.author}</strong>.
                             <br />
-                                I am a UI Engineer based in Belfast, Northern Ireland.
+                                I am a Front-end Software Engineer based in <Link href='https://www.google.com/maps/place/Belfast/@54.5947991,-6.0667142,11z/data=!3m1!4b1!4m5!3m4!1s0x4860fffdd7d08a3b:0x2e57162cefc7c531!8m2!3d54.597285!4d-5.93012' target='_blank' fancyHover>Belfast.</Link>
                             </Tagline>
                         </div>
                     </IntroSection>
