@@ -28,7 +28,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const blogs = data.allMarkdownRemark ? data.allMarkdownRemark.edges : []
+    const blogs = data.allMdx ? data.allMdx.edges : []
 
     const sortedBlogs = [...blogs, ...externalBlogs]
       .sort(byDate)
@@ -56,7 +56,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: { frontmatter: { isPublished: { eq: true } } }, sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(filter: { frontmatter: { isPublished: { eq: true } } }, sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt

@@ -1,4 +1,5 @@
 import React from 'react'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { rhythm, scale } from '../../utils/typography'
 import { Wrapper, SubHeading } from './Styled';
 import Tag from '../Tag';
@@ -16,7 +17,7 @@ const BlogPost = (props) => {
                 }}>
                 <span>{post.frontmatter.date}</span><span style={{ color: 'grey' }}>{post.frontmatter.timeToRead} read</span> {post.frontmatter.isNote && <Tag color="rgba(96,74,204,0.6)" background="rgba(96,74,204,0.12)">Personal Note</Tag>}
             </SubHeading>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <MDXRenderer>{post.body}</MDXRenderer>
             <hr
                 style={{
                     marginBottom: rhythm(1),
