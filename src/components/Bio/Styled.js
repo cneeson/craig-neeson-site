@@ -12,20 +12,19 @@ export const ProfileImage = styled(Image)`
     margin: 1.5rem;
 `;
 
-export const IntroSection = styled.section`
+export const Section = styled.section`
     text-align: center;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     max-width: 60vw;
     margin-left: auto;
     margin-right: auto;
+    min-height: 60vh;
 
     @media (max-width: 650px) {
         max-width: 90vw;
-        margin-top: 8rem;
     }
 `
 export const Tagline = styled.p`

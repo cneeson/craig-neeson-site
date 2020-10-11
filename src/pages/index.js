@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Orbs from '../components/Orbs';
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
