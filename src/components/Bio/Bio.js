@@ -31,7 +31,7 @@ function Bio() {
                     </Section>
                     <Section>
                         <Tagline>
-                            I am interested in staying afloat of the latest and greatest in the JavaScript eco-system, but am equally interested in delivering the most stable solution possible. I have experience in React, TypeScript and CSS-in-JS libraries. Check out my experience <Link href='/experience' fancyHover>here.</Link>
+                            I am interested in staying afloat of the latest and greatest in the JavaScript eco-system, but am equally interested in delivering solutions that are reliable and maintainable. I have experience in React, TypeScript and CSS-in-JS libraries. Check out my experience <Link href='/experience' fancyHover>here.</Link>
                         </Tagline>
                     </Section>
                     <ContactSection />
