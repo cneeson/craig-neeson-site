@@ -78,4 +78,5 @@ export const LinkContainer = styled.div`
 
 export const Footer = styled.div`
     margin-top: 5rem;
+    margin-bottom: 2rem;
 `;

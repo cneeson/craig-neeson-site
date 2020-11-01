@@ -12,12 +12,6 @@ const links = (
   </LinkContainer>
 )
 
-const footer = (
-  <Footer>
-    © {new Date().getFullYear()} Craig Neeson
-  </Footer>
-)
-
 class Layout extends React.Component {
   render() {
     const { title, children } = this.props
@@ -38,7 +32,9 @@ class Layout extends React.Component {
         </Nav>
         <BodyWrapper>
           {children}
-          {footer}
+          <Footer>
+            © {new Date().getFullYear()} Craig Neeson
+          </Footer>
         </BodyWrapper>
       </PageWrapper>
     )

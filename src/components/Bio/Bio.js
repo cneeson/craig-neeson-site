@@ -1,9 +1,6 @@
 import React, { Fragment } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import projectsSvgUrl from '../../../content/assets/projects-image.svg';
-import codeSvgUrl from '../../../content/assets/code-image.svg';
 import Link from '../Link'
-import BioSection from '../BioSection';
 import ContactSection from '../ContactSection';
 import InvisibleAnchor from '../InvisibleAnchor';
 import { ProfileImage, Section, Tagline } from './Styled';
@@ -29,12 +26,12 @@ function Bio() {
                     </Section>
                     <Section>
                         <Tagline>
-                            I have been fortunate enough to build UIs for global industries including healthcare, manufacture and e-commerce. I have worked in various diverse teams for the past 5 years to bring awesome user-experiences to life in collaboration with Product Owners, Designers and other Developers.
+                            I have been fortunate enough to build UIs for a range of global industries such as healthcare, manufacture and e-commerce. I have worked in a variety of teams over the past 5 years to bring awesome user-experiences to life in collaboration with product owners, designers and other devs.
                         </Tagline>
                     </Section>
                     <Section>
                         <Tagline>
-                            I am interested in staying afloat of the latest and greatest in the JavaScript eco-system, but am equally interested in delivering the most stable solution possible. I have experience in React, TypeScript and CSS-in-JS libraries. Check out my experience <Link href='/experience' target='_blank' fancyHover>here.</Link>
+                            I am interested in staying afloat of the latest and greatest in the JavaScript eco-system, but am equally interested in delivering the most stable solution possible. I have experience in React, TypeScript and CSS-in-JS libraries. Check out my experience <Link href='/experience' fancyHover>here.</Link>
                         </Tagline>
                     </Section>
                     <ContactSection />
