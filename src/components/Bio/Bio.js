@@ -26,12 +26,12 @@ function Bio() {
                     </Section>
                     <Section>
                         <Tagline>
-                            I have been fortunate enough to build UIs for a range of global industries such as healthcare, manufacture and e-commerce. I have worked in a variety of teams over the past 5 years to bring awesome user-experiences to life in collaboration with product owners, designers and other devs.
+                            I have been fortunate enough to build products for a range of global industries including healthcare, manufacture and e-commerce. I have worked in a variety of teams over the past 5 years to deliver awesome user-experiences to customers worldwide.
                         </Tagline>
                     </Section>
                     <Section>
                         <Tagline>
-                            I am interested in staying afloat of the latest and greatest in the JavaScript eco-system, but am equally interested in delivering solutions that are reliable and maintainable. I have experience in React, TypeScript and CSS-in-JS libraries. Check out my experience <Link href='/experience' fancyHover>here.</Link>
+                            My preferred UI framework of choice is React with TypeScript. I have a special interest in design systems, front-end build tools and web performance. Check out my experience <Link href='/experience' fancyHover>here.</Link>
                         </Tagline>
                     </Section>
                     <ContactSection />
