@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Link from '../Link'
 import { PageWrapper, BodyWrapper, Nav, Title, TitleLink, LinkContainer, Footer } from './Styled'
 import "./layout.css"
+import Background from '../Background'
 
 const links = (
   <LinkContainer>
@@ -23,20 +24,22 @@ class Layout extends React.Component {
     )
 
     return (
-      <PageWrapper>
-        <Nav>
-          <div>
-            {brand}
-            {links}
-          </div>
-        </Nav>
-        <BodyWrapper>
-          {children}
-          <Footer>
-            © {new Date().getFullYear()} Craig Neeson
+      <Fragment>
+        <PageWrapper>
+          <Nav>
+            <div>
+              {brand}
+              {links}
+            </div>
+          </Nav>
+          <BodyWrapper>
+            {children}
+            <Footer>
+              © {new Date().getFullYear()} Craig Neeson
           </Footer>
-        </BodyWrapper>
-      </PageWrapper>
+          </BodyWrapper>
+        </PageWrapper>
+      </Fragment>
     )
   }
 }

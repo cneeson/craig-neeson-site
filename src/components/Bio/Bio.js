@@ -4,6 +4,7 @@ import Link from '../Link'
 import ContactSection from '../ContactSection';
 import InvisibleAnchor from '../InvisibleAnchor';
 import { ProfileImage, Section, Tagline } from './Styled';
+import Background from '../Background';
 
 
 function Bio() {
@@ -14,6 +15,7 @@ function Bio() {
                 <Fragment>
                     <InvisibleAnchor id="about">About</InvisibleAnchor>
                     <Section>
+                        <Background id='bg-1' />
                         <ProfileImage
                             fixed={data.avatar.childImageSharp.fixed}
                             alt={data.site.siteMetadata.author}
@@ -25,11 +27,13 @@ function Bio() {
                         </Tagline>
                     </Section>
                     <Section>
+                        <Background id='bg-2' color='rgba(96,74,204,0.2)' />
                         <Tagline>
                             I have been fortunate enough to build products for a range of global industries including healthcare, manufacture and e-commerce. I have worked in a variety of teams over the past 5 years to deliver awesome user-experiences to customers worldwide.
                         </Tagline>
                     </Section>
                     <Section>
+                        <Background id='bg-3' color='#c6edff' />
                         <Tagline>
                             My preferred UI framework of choice is React with TypeScript. I have a special interest in design systems, front-end build tools and web performance. Check out my experience <Link href='/experience' fancyHover>here.</Link>
                         </Tagline>

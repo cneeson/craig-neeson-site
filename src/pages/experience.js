@@ -21,8 +21,8 @@ class ExperiencePage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           lang="en"
-          title="Home"
-          keywords={[`craig`, `neeson`, `craig neeson`, `CV`, `northern ireland`, `NI`, `belfast`, `blog`, `gatsby`, `javascript`, `react`]}
+          title="Experience"
+          keywords={[`craig`, `neeson`, `craig neeson`, `CV`, `experience`, `northern ireland`, `NI`, `belfast`, `blog`, `gatsby`, `javascript`, `react`]}
         />
 
         <P>

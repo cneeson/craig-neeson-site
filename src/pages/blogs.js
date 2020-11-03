@@ -38,8 +38,8 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           lang="en"
-          title="Craig Neeson Blog"
-          keywords={[`craig`, `neeson`, `craig neeson`, `developer`, `northern ireland`, `NI`, `belfast`, `blog`, `gatsby`, `javascript`, `react`]}
+          title="Blog"
+          keywords={[`craig`, `neeson`, `craig neeson`, `blog`, `developer`, `northern ireland`, `NI`, `belfast`, `gatsby`, `javascript`, `react`]}
         />
         <BlogList blogs={sortedBlogs} />
       </Layout>
