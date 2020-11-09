@@ -26,7 +26,7 @@ class ExperiencePage extends React.Component {
         />
 
         <P>
-          For a downloadable copy of my experience, check out my <Link href='/Craig-Neeson-CV.pdf' target='_blank' fancyHover>CV.</Link>
+          For an offline copy, you can <Link href='/Craig-Neeson-CV.pdf' target='_blank' fancyHover>download my CV here.</Link>
         </P>
 
         <h2>Experience</h2>
@@ -34,7 +34,7 @@ class ExperiencePage extends React.Component {
         <JobSection
           employer='Locate a Locum'
           role='Software Developer'
-          roleLength='October 2019 - Present | 1 yr 2 mo'
+          roleLength='October 2019 - Present | 1 yr 4 mo'
           href='https://locatealocum.com/'
           imgSrc='/lal.png'
           imgAlt='lal-logo'
@@ -173,7 +173,7 @@ class ExperiencePage extends React.Component {
         </ul>
 
         <P>
-          For a bit more detail around my skills, check out my <Link href='/Craig-Neeson-CV.pdf' target='_blank' fancyHover>CV.</Link>
+          For a bit more detail around my skills, <Link href='/Craig-Neeson-CV.pdf' target='_blank' fancyHover>download my CV here.</Link>
         </P>
 
       </Layout>
