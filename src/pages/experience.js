@@ -138,7 +138,7 @@ class ExperiencePage extends React.Component {
           role='Bachelor of Science (BSc), Computing, First Class Honours'
           roleLength='2013 - 2017'
           href='https://www.ulster.ac.uk/'
-          imgSrc='/uu.jpg'
+          imgSrc='/UU.jpg'
           imgAlt='ulster-university-logo'
           description='Gained exposure to many different areas of the computing industry as part of my course at Ulster University. During my time at the university I was awarded the Deans List Award twice for outstanding work throughout the year. I also produced a dissertation and project that was used as an example for future students on the same course.'
         />
