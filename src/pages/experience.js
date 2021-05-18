@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { JobSection } from '../components/JobSection'
 import Link from '../components/Link'
+import moment from 'moment';
 
 const P = styled.p`
   margin-top: 2rem;
@@ -34,19 +35,19 @@ class ExperiencePage extends React.Component {
         <JobSection
           employer='Locate a Locum'
           role='Software Developer'
-          roleLength='October 2019 - Present | 1 yr 4 mo'
+          startDate={moment('2019-10-01')}
           href='https://locatealocum.com/'
           imgSrc='/lal.png'
           imgAlt='lal-logo'
           keyPoints={[
-            'Took the lead on modernising the UI stack at Locate a Locum over the course of a year and a half. Introducing ambitious but achievable technical goals that challenged many cornerstones of how UI development was previously achieved at this healthcare start-up.',
+            `Took the lead on modernising the UI stacks for Locate a Locum's web and mobile platforms. Introducing ambitious but achievable technical goals that challenged many cornerstones of how UI development was previously achieved at this healthcare start-up.`,
             'Worked with developers to set front-end standards and upskilled team members to enable faster feature development and tackle existing tech debt more effectively.',
             'Drove key architecture changes to allow us to move the LAL platform from a legacy web-app stack to a partially serverside-rendered React stack.',
             <Fragment>Established LALs first fully documented <Link href='https://react-components-docs.herokuapp.com/' target='_blank' fancyHover>React component library</Link>, working with a newly hired UX designer to refresh the Locate a Locum brand.</Fragment>,
             <Fragment>Formed more maintainable patterns for retrieving and caching data retrieved from our API, establishing healthier habits when it comes to <Link href='https://kentcdodds.com/chats-with-kent-podcast/seasons/03/episodes/tanner-linsley-separates-ui-state-and-server-state' target='_blank' fancyHover>separating server state and client state</Link> and reducing the boilerplate that developers need to write to get things done.</Fragment>,
             'Identified opportunities to abstract duplicated data-fetching code into NPM packages which are now shared between React and React Native repos.',
             'Fostered the adoption of TypeScript in UI repos to increase code robustness and reduce bug regressions. At the time of writing, 40% of the main codebase has been converted to TS.',
-            'Alongside the continual improvement of process and practises, I worked to deliver major new modules for the platform including employee leave management, scheduling, clock-in and payroll processing.'
+            'Alongside the continual improvement of process and practises, I worked to deliver major new modules for the web and mobile platforms including employee leave management, scheduling, clock-in and payroll processing.'
           ]}
         />
 
@@ -55,7 +56,8 @@ class ExperiencePage extends React.Component {
         <JobSection
           employer='Flexera'
           role='Associate UI Engineer & UI Engineer'
-          roleLength='Sep 2018 - Oct 2019 | 1 yr 2 mo'
+          startDate={moment('2018-09-01')}
+          endDate={moment('2019-11-01')}
           href='https://www.flexera.com/'
           imgSrc='/flexera.png'
           imgAlt='flexera-logo'
@@ -73,7 +75,8 @@ class ExperiencePage extends React.Component {
         <JobSection
           employer='Nitec Solutions'
           role='Software Developer'
-          roleLength='Nov 2017 - Sep 2018 | 11 mo'
+          startDate={moment('2017-11-01')}
+          endDate={moment('2018-10-01')}
           href='https://www.nitec.com/'
           imgSrc='/nitec-solutions.jpeg'
           imgAlt='nitec-solutions-logo'
@@ -89,7 +92,8 @@ class ExperiencePage extends React.Component {
         <JobSection
           employer='Liberty Information Technology'
           role='Associate Software Engineer'
-          roleLength='Jun 2017 - Nov 2017 | 6 mo'
+          startDate={moment('2017-06-01')}
+          endDate={moment('2017-12-01')}
           href='https://www.liberty-it.co.uk/'
           imgSrc='/lit.png'
           imgAlt='lit-logo'
@@ -105,7 +109,8 @@ class ExperiencePage extends React.Component {
         <JobSection
           employer='Nitec Solutions'
           role='Placement Developer'
-          roleLength='Jun 2015 - Sep 2016 | 1 yr 4 mo'
+          startDate={moment('2015-06-01')}
+          endDate={moment('2016-10-01')}
           href='https://www.nitec.com/'
           imgSrc='/nitec-solutions.jpeg'
           imgAlt='nitec-solutions-logo'
@@ -122,7 +127,8 @@ class ExperiencePage extends React.Component {
         <JobSection
           employer='Nitec Solutions'
           role='Placement Student'
-          roleLength='Jul 2012 - Aug 2012 | 2 mo'
+          startDate={moment('2012-07-01')}
+          endDate={moment('2012-09-01')}
           href='https://www.nitec.com/'
           imgSrc='/nitec-solutions.jpeg'
           imgAlt='nitec-solutions-logo'
@@ -136,7 +142,8 @@ class ExperiencePage extends React.Component {
         <JobSection
           employer='Ulster University'
           role='Bachelor of Science (BSc), Computing, First Class Honours'
-          roleLength='2013 - 2017'
+          startDate={moment('2013-01-01')}
+          endDate={moment('2017-01-01')}
           href='https://www.ulster.ac.uk/'
           imgSrc='/UU.jpg'
           imgAlt='ulster-university-logo'
@@ -151,7 +158,7 @@ class ExperiencePage extends React.Component {
         <h3>Highly Proficient</h3>
         <ul>
           <li>TypeScript & JavaScript</li>
-          <li>React</li>
+          <li>React & React-Native</li>
           <li>Node</li>
           <li>HTML and template engines such as Handlebars and Pug</li>
           <li>CSS, preprocessors (SCSS/LESS) and CSS-in-JS libraries (styled-components)</li>

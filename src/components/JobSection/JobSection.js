@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react';
+import humanizeDuration from 'humanize-duration';
+import moment, { isMoment } from 'moment';
 import { Flex } from '../Flex';
 import { P } from '../P';
 import { H4, H5 } from '../Typography';
@@ -6,17 +8,38 @@ import { Image } from '../Image';
 import Link from '../Link';
 
 
+const options = {
+    units: ['y', 'mo'],
+    round: true,
+    delimiter: ' ',
+    language: 'shortEn',
+    languages: {
+        shortEn: {
+        y: () => 'yr',
+        mo: () => 'mo',
+        },
+    },
+};
+
 const JobSection = (props) => {
     const {
         keyPoints,
         role,
-        roleLength,
+        startDate,
+        endDate,
         employer,
         imgSrc,
         imgAlt,
         description,
         href
     } = props;
+
+    const start = moment(startDate).valueOf();
+    const end = moment(endDate).valueOf();
+    const timeSinceStart = humanizeDuration(end - start, options);
+    const startFormatted = moment(startDate).format('MMM YYYY');
+    const endFormatted = moment(endDate).format('MMM YYYY');
+    const isCurrent = !isMoment(endDate);
 
     return (
         <Fragment>
@@ -29,13 +52,12 @@ const JobSection = (props) => {
                         <H4 mb='.75rem'>{employer}</H4>
                     </Link>
                     <H5 mb='.75rem'>{role}</H5>
-                    <P size='small' color='grey'>{roleLength}</P>
+                    <P size='small' color='grey'>{`${startFormatted} - ${isCurrent ? 'Present' : endFormatted} | ${timeSinceStart}`}</P>
                 </div>
             </Flex>
 
             {keyPoints && (
                 <Fragment>
-                    {/* <H4>Key Points</H4> */}
                     <ul>
                         {keyPoints.map((point) => (
                             <li>
