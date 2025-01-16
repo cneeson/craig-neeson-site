@@ -3,6 +3,8 @@ import { Link as GatsbyLink } from 'gatsby'
 
 export const InternalLink = styled(GatsbyLink)`
     color: #ff007d;
+    
+    ${({ block }) => block ? 'display: block;' : ''}
 
     ${(props) => props.fancyHover && `
         transition: all 0.3s;
@@ -22,7 +24,9 @@ export const InternalLink = styled(GatsbyLink)`
 export const ExternalLink = styled.a`
         color: #ff007d;
 
-        ${(props) => props.fancyHover && `
+    ${({ block }) => block ? 'display: block;' : ''}
+
+    ${(props) => props.fancyHover && `
             transition: all 0.3s;
             text-decoration: none;
             box-shadow: none;

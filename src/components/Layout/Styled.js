@@ -9,7 +9,7 @@ export const PageWrapper = styled.div`
 export const BodyWrapper = styled.div`
     margin-left: auto;
     margin-right: auto;
-    max-width: ${rhythm(24)};
+    max-width: ${rhythm(36)};
 
     @media (max-width: 650px) {
         padding: ${rhythm(1.5)} ${rhythm(3 / 4)};

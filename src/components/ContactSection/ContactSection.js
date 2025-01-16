@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub, faSpotify } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
 import { Section, IconsWrapper } from './Styled';
 import InvisibleAnchor from '../InvisibleAnchor';
 
-function ContactSection(props) {
+function ContactSection() {
     return (
         <Fragment>
             <InvisibleAnchor id="contact">Contact</InvisibleAnchor>
@@ -19,9 +19,6 @@ function ContactSection(props) {
                     </a>
                     <a href="https://github.com/cneeson" target="_blank" className="github'">
                         <FontAwesomeIcon icon={faGithub} color="#24292e" size="5x" />
-                    </a>
-                    <a href="https://open.spotify.com/user/cneeson12?si=P47MYR4jS8usftxVUtsPwQ" target="_blank">
-                        <FontAwesomeIcon icon={faSpotify} color="#1DB954" size="5x" />
                     </a>
                 </IconsWrapper>
             </Section >

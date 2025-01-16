@@ -6,7 +6,12 @@ import { P } from '../P';
 import { H4, H5 } from '../Typography';
 import { Image } from '../Image';
 import Link from '../Link';
+import styled from "styled-components";
 
+
+const Wrapper = styled.div`
+    ${({ mb }) => mb ? `margin-bottom: ${mb};` : ''}
+`;
 
 const options = {
     units: ['y', 'mo'],
@@ -15,8 +20,8 @@ const options = {
     language: 'shortEn',
     languages: {
         shortEn: {
-        y: () => 'yr',
-        mo: () => 'mo',
+        y: (count) => `year${count > 1 ? 's' : ''}`,
+        mo: (count) => `month${count > 1 ? 's' : ''}`,
         },
     },
 };
@@ -31,7 +36,8 @@ const JobSection = (props) => {
         imgSrc,
         imgAlt,
         description,
-        href
+        href,
+        mb
     } = props;
 
     const start = moment(startDate).valueOf();
@@ -42,16 +48,16 @@ const JobSection = (props) => {
     const isCurrent = !isMoment(endDate);
 
     return (
-        <Fragment>
-            <Flex alignItems='center'>
-                <Flex width='140px'>
-                    <Image src={imgSrc} alt={imgAlt} borderRadius='4px' width='95px' />
+        <Wrapper mb={mb ? '1.5rem' : '2rem'}>
+            <Flex alignItems='center' mb='1rem'>
+                <Flex width='90px'>
+                    <Image src={imgSrc} alt={imgAlt} borderRadius='4px' width='70px' />
                 </Flex>
                 <div>
                     <Link href={href} target='_blank' fancyHover>
                         <H4 mb='.75rem'>{employer}</H4>
                     </Link>
-                    <H5 mb='.75rem'>{role}</H5>
+                    <H5 mb='0'>{role}</H5>
                     <P size='small' color='grey'>{`${startFormatted} - ${isCurrent ? 'Present' : endFormatted} | ${timeSinceStart}`}</P>
                 </div>
             </Flex>
@@ -75,7 +81,7 @@ const JobSection = (props) => {
                     {description}
                 </P>
             )}
-        </Fragment>
+        </Wrapper>
     );
 };
 

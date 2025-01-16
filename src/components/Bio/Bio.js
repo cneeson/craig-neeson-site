@@ -29,13 +29,13 @@ function Bio() {
                     <Section>
                         <Background id='bg-2' color='rgba(96,74,204,0.2)' />
                         <Tagline>
-                            I have been fortunate enough to build products for a range of global industries including healthcare, manufacture and e-commerce. I have worked in a variety of teams over the past 5 years to deliver awesome user-experiences to customers worldwide.
+                            I have been fortunate enough to build products for a range of global industries including healthcare, manufacturing and e-commerce. I have worked in a variety of teams over the past 7 years to deliver awesome user-experiences to customers worldwide.
                         </Tagline>
                     </Section>
                     <Section>
                         <Background id='bg-3' color='#c6edff' />
                         <Tagline>
-                            My preferred UI framework of choice is React with TypeScript. I have a special interest in design systems, front-end build tools and web performance. Check out my experience <Link href='/experience' fancyHover>here.</Link>
+                            I have experience writing UIs in Javascript/Typescript with React and Vue. I have a special interest in design systems, front-end build tools and web performance. Check out my experience <Link href='/experience' fancyHover>here.</Link>
                         </Tagline>
                     </Section>
                     <ContactSection />
