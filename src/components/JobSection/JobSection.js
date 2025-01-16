@@ -13,6 +13,12 @@ const Wrapper = styled.div`
     ${({ mb }) => mb ? `margin-bottom: ${mb};` : ''}
 `;
 
+const Ul = styled.ul`
+    li {
+        margin-bottom: .5rem;
+    }
+`;
+
 const options = {
     units: ['y', 'mo'],
     round: true,
@@ -64,7 +70,7 @@ const JobSection = (props) => {
 
             {keyPoints && (
                 <Fragment>
-                    <ul>
+                    <Ul>
                         {keyPoints.map((point) => (
                             <li>
                                 <P>
@@ -72,7 +78,7 @@ const JobSection = (props) => {
                                 </P>
                             </li>
                         ))}
-                    </ul>
+                    </Ul>
                 </Fragment>
             )}
 

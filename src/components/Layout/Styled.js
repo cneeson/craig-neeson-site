@@ -22,11 +22,13 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
 
     div{
         margin-left: auto;
         margin-right: auto;
-        max-width: ${rhythm(24)};
+        max-width: 1050px;
 
         display: flex;
         justify-content: space-between;
